@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: DarkViolet;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kidgame.SceneController">
+   <children>
+      <Button layoutX="14.0" layoutY="349.0" mnemonicParsing="false" onAction="#switchToHome" style="-fx-background-color: lightgreen; -fx-background-radius: 20;">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/25694.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <ImageView fx:id="itemImageView" fitHeight="183.0" fitWidth="259.0" layoutX="171.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="24.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What is the first letter of: ">
+         <font>
+            <Font name="Chalkboard SE Regular" size="20.0" />
+         </font>
+      </Text>
+      <HBox alignment="TOP_CENTER" layoutX="25.0" layoutY="257.0" prefHeight="79.0" prefWidth="550.0" spacing="10.0">
+         <children>
+            <Button fx:id="letter1" mnemonicParsing="false" onAction="#handleLetter1" style="-fx-background-color: firebrick; -fx-background-radius: 15;" text="1" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="letter2" mnemonicParsing="false" onAction="#handleLetter2" style="-fx-background-color: firebrick; -fx-background-radius: 15;" text="2" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="letter3" mnemonicParsing="false" onAction="#handleLetter3" style="-fx-background-color: firebrick; -fx-background-radius: 15;" text="3" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="letter4" mnemonicParsing="false" onAction="#handleLetter4" style="-fx-background-color: firebrick; -fx-background-radius: 15;" text="4" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="letter5" mnemonicParsing="false" onAction="#handleLetter5" style="-fx-background-color: firebrick; -fx-background-radius: 15;" text="5" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="letter6" mnemonicParsing="false" onAction="#handleLetter6" style="-fx-background-color: firebrick; -fx-background-radius: 15;" text="6" textFill="WHITE" textOverrun="CLIP">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

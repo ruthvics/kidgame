@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: DarkViolet;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kidgame.SceneController">
+   <children>
+      <TextField fx:id="playerName" layoutX="20.0" layoutY="62.0" onAction="#getName" promptText="name" style="-fx-background-color: beige;" />
+      <Text fill="#ffb71b" layoutX="24.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Player Name:">
+         <font>
+            <Font name="Chalkboard SE Regular" size="17.0" />
+         </font>
+      </Text>
+      <Button layoutX="143.0" layoutY="103.0" mnemonicParsing="false" onAction="#saveScore" style="-fx-background-color: LightGreen; -fx-background-radius: 20;" text="Ok">
+         <font>
+            <Font name="Chalkboard" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Text layoutX="24.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Press Ok to continue" wrappingWidth="120.17790222167969">
+         <font>
+            <Font name="Chalkboard" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

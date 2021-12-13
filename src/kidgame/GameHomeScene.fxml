@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: DarkViolet;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kidgame.SceneController">
+   <children>
+      <Button layoutX="489.0" layoutY="328.0" mnemonicParsing="false" onAction="#switchToGame" style="-fx-background-color: LightGreen; -fx-background-radius: 30;" text="PLAY">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Chalkboard SE Regular" size="26.0" />
+         </font>
+      </Button>
+      <HBox layoutX="50.0" layoutY="47.0" prefHeight="64.0" prefWidth="242.0">
+         <children>
+            <Text fill="#fcb000" strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+               <font>
+                  <Font name="Chalkboard" size="70.0" />
+               </font>
+            </Text>
+            <Text fill="#4d13dd" strokeType="OUTSIDE" strokeWidth="0.0" text="L">
+               <font>
+                  <Font name="Chalkboard" size="70.0" />
+               </font>
+            </Text>
+            <Text fill="#d74848" strokeType="OUTSIDE" strokeWidth="0.0" text="P">
+               <font>
+                  <Font name="Chalkboard" size="70.0" />
+               </font>
+            </Text>
+            <Text fill="#37b229" strokeType="OUTSIDE" strokeWidth="0.0" text="H">
+               <font>
+                  <Font name="Chalkboard" size="70.0" />
+               </font>
+            </Text>
+            <Text fill="#ffec18" strokeType="OUTSIDE" strokeWidth="0.0" text="A" wrappingWidth="42.12397003173828">
+               <font>
+                  <Font name="Chalkboard" size="70.0" />
+               </font>
+            </Text>
+            <Text fill="#2d2ecc" strokeType="OUTSIDE" strokeWidth="0.0" text="B">
+               <font>
+                  <Font name="Chalkboard" size="70.0" />
+               </font>
+            </Text>
+            <Text fill="#ffca4d" strokeType="OUTSIDE" strokeWidth="0.0" text="E">
+               <font>
+                  <Font name="Chalkboard" size="70.0" />
+               </font>
+            </Text>
+            <Text fill="#d05458" strokeType="OUTSIDE" strokeWidth="0.0" text="T">
+               <font>
+                  <Font name="Chalkboard" size="70.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox layoutX="229.0" layoutY="136.0" prefHeight="62.0" prefWidth="144.0">
+         <children>
+            <Text fill="#e13636" strokeType="OUTSIDE" strokeWidth="0.0" text="G">
+               <font>
+                  <Font name="Chalkboard" size="50.0" />
+               </font>
+            </Text>
+            <Text fill="#25c354" strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+               <font>
+                  <Font name="Chalkboard" size="50.0" />
+               </font>
+            </Text>
+            <Text fill="#f0ff21" strokeType="OUTSIDE" strokeWidth="0.0" text="M">
+               <font>
+                  <Font name="Chalkboard" size="50.0" />
+               </font>
+            </Text>
+            <Text fill="#4fb0ff" strokeType="OUTSIDE" strokeWidth="0.0" text="E">
+               <font>
+                  <Font name="Chalkboard" size="50.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <ImageView fitHeight="89.0" fitWidth="144.0" layoutX="-5.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../2a9y.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="144.0" layoutX="144.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../2zH3.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="144.0" layoutX="211.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../2eSf.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="144.0" layoutX="99.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../unnamed.gif" />
+         </image>
+      </ImageView>
+      <VBox layoutX="417.0" layoutY="47.0" prefHeight="152.0" prefWidth="156.0">
+         <children>
+            <Text fx:id="scoreTitle" fill="#ff2e2e" strokeType="OUTSIDE" strokeWidth="0.0" text="title">
+               <font>
+                  <Font name="Chalkboard SE Regular" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="highScore1" fill="#3bd3c2" strokeType="OUTSIDE" strokeWidth="0.0" text="p1">
+               <font>
+                  <Font name="Chalkboard SE Regular" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="highScore2" fill="#dcf53c" strokeType="OUTSIDE" strokeWidth="0.0" text="p2">
+               <font>
+                  <Font name="Chalkboard SE Regular" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="highScore3" fill="#4cff6c" strokeType="OUTSIDE" strokeWidth="0.0" text="p3">
+               <font>
+                  <Font name="Chalkboard SE Regular" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="highScore4" fill="#ffc743" strokeType="OUTSIDE" strokeWidth="0.0" text="p4">
+               <font>
+                  <Font name="Chalkboard SE Regular" size="20.0" />
+               </font>
+            </Text>
+            <Text fx:id="highScore5" fill="#22249a" strokeType="OUTSIDE" strokeWidth="0.0" text="p5">
+               <font>
+                  <Font name="Chalkboard SE Regular" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <ImageView fitHeight="81.0" fitWidth="122.0" layoutX="335.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../4M54.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
